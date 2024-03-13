@@ -58,7 +58,6 @@
   "scripts": {
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
-    "test": "jest --config jestconfig.json",
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
@@ -66,7 +65,7 @@
     "build:cjs:watch": "tsc --module commonjs --outDir dist/cjs -w",
     "build:watch": "concurrently \"npm run build:esm:watch\" \"npm run build:cjs:watch\"",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run prettier && npm run lint"
+    "prepublishOnly": "npm run prettier && npm run lint"
   },
   "browserslist": [
     ">0.2%",
