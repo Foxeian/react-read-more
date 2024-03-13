@@ -33,7 +33,7 @@
 To install the package:
 
 ```bash
-npm install
+npm install @foxeian/react-read-more
 ```
 
 ### Quickstart
@@ -42,7 +42,7 @@ example of 'ReadMoreArea' in React Component
 
 ```tsx
 import React from 'react';
-import ReadMoreArea from 'name-of-package';
+import ReadMoreArea from '@foxeian/react-read-more';
 
 export default function App() {
   return (
@@ -60,7 +60,7 @@ export default function App() {
 
 ```tsx
 import React from 'react';
-import ReadMoreArea from 'name-of-package';
+import ReadMoreArea from '@foxeian/react-read-more';
 
 const buttonStyle = {
   color: "blue",
