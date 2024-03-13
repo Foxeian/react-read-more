@@ -1,0 +1,76 @@
+{
+  "name": "react-read-more",
+  "version": "1.0.0",
+  "description": "A React.js package for creating short text with a \"read more\" button to expand the text, built with TypeScript support. This package provides a simple and easy-to-use component for truncating and expanding text with a customizable button.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Foxeian/react-read-more.git"
+  },
+  "keywords": [
+    "reactjs",
+    "read-more",
+    "readmore",
+    "read-less",
+    "readless",
+    "nextjs",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Immanuel Ehsan (Foxeian)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Foxeian/react-read-more/issues"
+  },
+  "homepage": "https://github.com/Foxeian/react-read-more#readme",
+  "peerDependencies": {
+    "react": ">= 17.0.0",
+    "react-dom": ">= 17.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.2.1",
+    "@types/jest": "^29.5.12",
+    "@types/react": "18.0.34",
+    "@types/react-dom": "18.0.11",
+    "@typescript-eslint/eslint-plugin": "6.15.0",
+    "@typescript-eslint/parser": "6.15.0",
+    "concurrently": "^8.2.2",
+    "eslint": "8.56.0",
+    "eslint-config-react-app": "7.0.1",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-prettier": "5.1.1",
+    "eslint-plugin-react": "7.28.0",
+    "eslint-plugin-react-hooks": "4.3.0",
+    "jest": "^29.7.0",
+    "jest-canvas-mock": "^2.5.2",
+    "jest-environment-jsdom": "^29.7.0",
+    "prettier": "^3.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "5.3.3"
+  },
+  "overrides": {
+    "typescript": "5.3.3"
+  },
+  "scripts": {
+    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
+    "test": "jest --config jestconfig.json",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build:esm:watch": "tsc -w",
+    "build:cjs:watch": "tsc --module commonjs --outDir dist/cjs -w",
+    "build:watch": "concurrently \"npm run build:esm:watch\" \"npm run build:cjs:watch\"",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run prettier && npm run lint"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
