@@ -37,7 +37,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
 var ReadMoreContent = function (_a) {
     var children = _a.children, textClassName = _a.textClassName, textStyle = _a.textStyle;
-    return (React.createElement("p", { className: textClassName, style: textStyle }, children));
+    return (React.createElement("p", { className: textClassName, style: __assign({ display: 'inline' }, textStyle) }, children));
 };
 var ReadMoreArea = function (_a) {
     var children = _a.children, className = _a.className, style = _a.style, _b = _a.expandLabel, expandLabel = _b === void 0 ? 'Read more' : _b, _c = _a.collapseLabel, collapseLabel = _c === void 0 ? 'Read less' : _c, textClassName = _a.textClassName, textStyle = _a.textStyle, buttonClassName = _a.buttonClassName, buttonStyle = _a.buttonStyle, _d = _a.wordsLimit, wordsLimit = _d === void 0 ? 500 : _d;
@@ -46,9 +46,9 @@ var ReadMoreArea = function (_a) {
     var onShowLess = React.useCallback(function () { return setExpanded(false); }, []);
     var text = new String(children);
     var textExpander = expanded ? children : text.substring(0, wordsLimit) + '...';
-    return (React.createElement("div", { className: className, style: __assign({ display: 'flex', flexDirection: 'column' }, style) },
+    return (React.createElement("div", { className: className, style: __assign({ display: 'black' }, style) },
         React.createElement(ReadMoreContent, { textClassName: textClassName, textStyle: textStyle }, textExpander),
-        text.length > wordsLimit && (React.createElement("button", { className: buttonClassName, style: __assign({ color: 'unset', backgroundColor: 'unset', border: 'unset', textDecoration: 'underline', cursor: 'pointer' }, buttonStyle), onClick: expanded ? onShowLess : onShowMore }, expanded ? collapseLabel : expandLabel))));
+        text.length > wordsLimit && (React.createElement("button", { className: buttonClassName, style: __assign({ display: 'inline', color: 'unset', backgroundColor: 'unset', border: 'unset', textDecoration: 'underline', cursor: 'pointer', paddingLeft: '8px', paddingRight: '8px' }, buttonStyle), onClick: expanded ? onShowLess : onShowMore }, expanded ? collapseLabel : expandLabel))));
 };
 exports.default = ReadMoreArea;
 //# sourceMappingURL=read-more-area.js.map
