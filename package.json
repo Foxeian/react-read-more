@@ -1,6 +1,6 @@
 {
   "name": "@foxeian/react-read-more",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "A React.js package for creating short text with a \"read more\" button to expand the text, built with TypeScript support. This package provides a simple and easy-to-use component for truncating and expanding text with a customizable button.",
   "source": "./src/index.ts",
   "main": "./dist/cjs/index.js",
