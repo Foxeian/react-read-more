@@ -23,6 +23,7 @@
 
 -   Support Typescript
 -   Every part of component (container, text, button) is customizable
+-   It works with Server-side components (SSR)
 -   Support classes (Tailwind, Bootstrap, etc...)
 -   Easy-to-use
 
