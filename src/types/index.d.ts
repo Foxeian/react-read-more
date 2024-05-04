@@ -14,5 +14,5 @@ export type ReadMoreAreaProps = {
   textStyle?: React.CSSProperties
   buttonClassName?: string
   buttonStyle?: React.CSSProperties
-  wordsLimit?: number
+  lettersLimit?: number
 }

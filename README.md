@@ -48,7 +48,7 @@ import ReadMoreArea from '@foxeian/react-read-more';
 export default function App() {
   return (
     <ReadMoreArea
-      wordsLimit={100} // limit of letters (100 letters)
+      lettersLimit={100} // limit of letters (100 letters)
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </ReadMoreArea>
@@ -81,7 +81,7 @@ export default function App() {
       textStyle={{ fontSize: '1rem', color: 'black' }} // inline styles of text
       buttonClassName="text-base text-green-700 p-6" // classes styles of button (tailwind)
       buttonStyle={buttonStyle} // inline styles of button
-      wordsLimit={100} // limit of letters (100 letters)
+      lettersLimit={100} // limit of letters (100 letters)
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </ReadMoreArea>
@@ -102,7 +102,7 @@ export default function App() {
 | textStyle       | inline styles of text                         | CSS Properties | null          |
 | buttonClassName | classes styles of button                      | string         | null          |
 | buttonStyle     | inline styles of button                       | CSS Properties | null          |
-| wordsLimit      | limit of letters                              | number         | 500           |
+| lettersLimit      | limit of letters                              | number         | 500           |
 
 ## License
 

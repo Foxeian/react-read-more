@@ -21,7 +21,7 @@ const ReadMoreArea: React.FC<ReadMoreAreaProps> = ({
   textStyle,
   buttonClassName,
   buttonStyle,
-  wordsLimit = 500,
+  lettersLimit = 500,
 }) => {
   const [expanded, setExpanded] = React.useState(false)
 
@@ -30,13 +30,13 @@ const ReadMoreArea: React.FC<ReadMoreAreaProps> = ({
 
   const text = new String(children)
 
-  const textExpander = expanded ? children : text.substring(0, wordsLimit) + '...'
+  const textExpander = expanded ? children : text.substring(0, lettersLimit) + '...'
   return (
     <div className={className} style={{ display: 'black', ...style }}>
       <ReadMoreContent textClassName={textClassName} textStyle={textStyle}>
         {textExpander}
       </ReadMoreContent>
-      {text.length > wordsLimit && (
+      {text.length > lettersLimit && (
         <button
           className={buttonClassName}
           style={{
