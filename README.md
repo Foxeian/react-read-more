@@ -10,8 +10,11 @@
 
 <p align="center">
   <picture>
-    <img alt="ScreenGIF" src=".github/images/foxeian-readme-screen.gif" height=400>
+    <img alt="ScreenGIF" src=".github/images/foxeian-readme-screen.gif" height=500>
   </picture>
+</p>
+
+<p align="center">
   <a href="#quickstart">Quickstart</a> |
   <a href="#installation">Installation</a> |
   <a href="#example-of-readmorearea-customize">Examples</a> |
