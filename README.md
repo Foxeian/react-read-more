@@ -1,14 +1,17 @@
 <p align="center">
   <a href="https://github.com/foxeian/react-read-more">
     <picture>
-  <img alt="Foxeian Logo" src=".github/images/foxeian-readme-logo.png" height=200>
-</picture>
+      <img alt="Foxeian Logo" src=".github/images/foxeian-readme-logo.png" height=200>
+    </picture>
   </a>
 </p>
 
 # React Read More
 
 <p align="center">
+  <picture>
+    <img alt="ScreenGIF" src=".github/images/foxeian-readme-screen.gif" height=400>
+  </picture>
   <a href="#quickstart">Quickstart</a> |
   <a href="#installation">Installation</a> |
   <a href="#example-of-readmorearea-customize">Examples</a> |
@@ -21,11 +24,11 @@
 
 ### Features
 
--   Support Typescript
--   Every part of component (container, text, button) is customizable
--   It works with Server-side components (SSR)
--   Support classes (Tailwind, Bootstrap, etc...)
--   Easy-to-use
+- Support Typescript
+- Every part of component (container, text, button) is customizable
+- It works with Server-side components (SSR)
+- Support classes (Tailwind, Bootstrap, etc...)
+- Easy-to-use
 
 ## Getting Started
 
@@ -92,17 +95,17 @@ export default function App() {
 
 ### Parameters
 
-| Name            | Description                                   | Type           | Default value |
-| --------------- | :-------------------------------------------- | :--------------| :------------ |
-| className       | classes styles of main div                    | string         | null          |
-| style           | inline styles of main div                     | CSS Properties | null          |
-| expandLabel     | Expand Label                                  | number         | `Read more`   |
-| collapseLabel   | Collapse Label                                | string         | `Read less`   |
-| textClassName   | classes styles of text                        | string         | null          |
-| textStyle       | inline styles of text                         | CSS Properties | null          |
-| buttonClassName | classes styles of button                      | string         | null          |
-| buttonStyle     | inline styles of button                       | CSS Properties | null          |
-| lettersLimit      | limit of letters                              | number         | 500           |
+| Name            | Description                | Type           | Default value |
+| --------------- | :------------------------- | :------------- | :------------ |
+| className       | classes styles of main div | string         | null          |
+| style           | inline styles of main div  | CSS Properties | null          |
+| expandLabel     | Expand Label               | number         | `Read more`   |
+| collapseLabel   | Collapse Label             | string         | `Read less`   |
+| textClassName   | classes styles of text     | string         | null          |
+| textStyle       | inline styles of text      | CSS Properties | null          |
+| buttonClassName | classes styles of button   | string         | null          |
+| buttonStyle     | inline styles of button    | CSS Properties | null          |
+| lettersLimit    | limit of letters           | number         | 500           |
 
 ## License
 
